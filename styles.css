@@ -1,0 +1,133 @@
+:root{
+    --penn-blue:#0c1f8f;   
+    --ink:#111111;         
+    --bg:#ffffff;          
+    --stroke:#0b0b0b;      
+    --muted:#3a3a3a;
+    --button-blue:#0c1f8f;
+  }
+
+  .penn-logo {
+    width: 128px;       
+    height: auto;
+    display: block;
+  }
+  .topbar {
+    padding: 7px 1px 3px;
+    display: flex;
+    align-items: center;
+  }  
+  
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #f3f5fb;
+    font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--ink);
+  }  
+  
+  /* phone frame */
+  .phone{
+    width:390px; height:844px; background:var(--bg);
+    border-radius:36px; box-shadow:0 16px 28px rgba(0,0,0,.12);
+    border:1px solid #d1d5db; overflow:hidden; position:relative;
+    display:grid; grid-template-rows:auto 1fr auto;
+  }
+  
+  .topbar{ padding:14px 16px 6px; }
+  .shield{ width:28px; height:28px }
+  
+  main{ padding:8px 16px 0 }
+  
+  .search-bar{
+    display:flex; align-items:center; gap:10px;
+    border:2px solid var(--ink);
+    border-radius:999px; padding:10px 14px; margin-top:4px;
+    background:white;
+    margin-top: 4px;
+  }
+  .search-bar .icon{ width:20px; height:20px }
+  .search-bar input{
+    flex:1; border:none; outline:none; font-size:14px;
+  }
+  .search-bar .mic{ width:20px; height:20px }
+  
+  .row{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+    margin-top:4px;
+  }
+  .select-wrap{
+    position:relative;
+    display:flex; align-items:center; gap:8px;
+    border:2px solid var(--ink); background:white;
+    border-radius:10px; height:40px; padding:0 12px 0 12px;
+  }
+  .select-btn{
+    appearance:none; -webkit-appearance:none;
+    background:transparent; border:none; outline:none;
+    font-weight:600; color:var(--penn-blue);
+    width:100%; text-align:left;
+  }
+  .chev{
+    position:absolute; right:10px; top:50%; transform:translateY(-50%);
+    font-size:18px; line-height:1; color:var(--ink);
+  }
+  
+  .overlap{
+    display:flex; align-items:center; gap:8px; margin:12px 2px 6px;
+    font-size:14px; color:var(--penn-blue);
+  }
+  .overlap input{
+    width:18px; height:18px; accent-color:var(--penn-blue);
+    border:2px solid var(--ink);
+  }
+  
+  .page-title{
+    text-align:center; color:var(--penn-blue);
+    font-size:26px; margin:8px 0 10px; font-weight:700;
+  }
+  
+  .grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:18px;
+  }
+  .card{
+    position:relative; background:#fff;
+    border:3px solid var(--ink); border-radius:14px;
+    height:132px; display:grid; place-items:center; padding:10px;
+  }
+  .card-check{
+    position:absolute; left:10px; top:10px; display:inline-flex; align-items:center;
+  }
+  .card-check input{
+    width:18px; height:18px; accent-color:var(--penn-blue);
+  }
+  .card-label{
+    text-align:center; color:var(--penn-blue); font-weight:600; line-height:1.2;
+    font-size:18px;
+  }
+  
+  .bottom{
+    display:flex; align-items:flex-end; justify-content:space-between;
+    padding:14px 16px 18px; gap:14px;
+  }
+  .left-actions{
+    display:grid; gap:10px; width:56%;
+  }
+  .pill{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--button-blue); color:#fff; border:none; border-radius:999px;
+    padding:10px 14px; font-weight:700; font-size:14px;
+    box-shadow:0 2px 0 rgba(0,0,0,.25) inset;
+  }
+  .pill .arrow{ font-weight:700 }
+  
+  .fab{
+    width:72px; height:72px; border-radius:50%;
+    background:var(--button-blue); border:3px solid var(--ink);
+    display:grid; place-items:center; box-shadow:0 8px 16px rgba(0,0,0,.15);
+  }
+  .fab svg{ width:34px; height:34px }
+  

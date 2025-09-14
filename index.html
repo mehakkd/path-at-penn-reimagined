@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Path@Penn – Course Filters (Static)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="phone" role="application" aria-label="Path@Penn opening screen (static)">
+    <header class="topbar">
+        <img src="minipennlogo.png" alt="Penn Shield Logo" class="penn-logo" />
+    </header>      
+
+    <main>
+      <div class="search-bar" role="search">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 21l-4.5-4.5" stroke="#111" stroke-width="2" stroke-linecap="round"/> 
+          <circle cx="10" cy="10" r="7" fill="none" stroke="#111" stroke-width="2"/>
+        </svg>
+        <input type="text" placeholder="Search Title, Subject, instructor, or Keyword" aria-readonly="true">
+        <svg class="mic" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="9" y="4" width="6" height="10" rx="3" fill="#0c1f8f"/>
+          <path d="M12 20v-3M7 12a5 5 0 0 0 10 0" fill="none" stroke="#0c1f8f" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="row">
+        <div class="select-wrap">
+          <button class="select-btn" aria-label="Semester">Semester</button>
+          <span class="chev" aria-hidden="true">▼</span>
+        </div>
+        <div class="select-wrap">
+          <button class="select-btn" aria-label="Level">Level</button>
+          <span class="chev" aria-hidden="true">▼</span>
+        </div>
+      </div>
+
+      <label class="overlap">
+        <input type="checkbox">
+        <span>Don’t overlap with selected cart</span>
+      </label>
+
+      <h1 class="page-title">Course Filters</h1>
+
+      <section class="grid">
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">
+            Honors/<br>University/<br>Course<br>Attribute
+          </div>
+        </article>
+
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">Credit</div>
+        </article>
+
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">School</div>
+        </article>
+
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">Course<br>Status</div>
+        </article>
+
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">Schedule<br>Type</div>
+        </article>
+
+        <article class="card">
+          <label class="card-check">
+            <input type="checkbox">
+            <span></span>
+          </label>
+          <div class="card-label">Manage<br>Course<br>Times</div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <div class="left-actions">
+        <button class="pill">
+          <span>Degree Audit</span>
+          <span class="arrow">➤</span>
+        </button>
+        <button class="pill">
+          <span>View Cart</span>
+          <span class="arrow">➤</span>
+        </button>
+      </div>
+      <button class="fab" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 21l-4.5-4.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="10" cy="10" r="7" fill="none" stroke="white" stroke-width="2"/>
+        </svg>
+      </button>
+    </footer>
+  </div>
+</body>
+</html>
