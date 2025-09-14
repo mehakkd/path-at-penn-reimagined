@@ -15,3 +15,5 @@ No installation or build steps are required.
 ├── styles.css # Page styling
 ├── minipennlogo.png # Logo for top left of screen
 
+AI Attribution:
+The search (magnifying glass) and microphone icons in the "search-bar" element were generated with assistance from ChatGPT and adjusted for stroke width, color, and size to match the prototype.
